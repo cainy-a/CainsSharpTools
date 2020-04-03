@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using static System.Math;
 
 namespace CainsSharpTools
 {
-    // Enumerators for CalculateArea() and CalculateVolume()
     public enum AreaShape
     {
         Rectangle,
@@ -17,7 +15,7 @@ namespace CainsSharpTools
         Cuboid,
         Ovoid
     }
-    public static class Functions
+    public static partial class Functions
     {
         public static class MathTools
         {
@@ -41,7 +39,7 @@ namespace CainsSharpTools
 
                 if (numberToCheck % 2 == 0 || numberToCheck % 3 == 0 || numberToCheck % 5 == 0) return false;
 
-                var boundary = (long)Floor(Sqrt(numberToCheck));
+                var boundary = (long)Math.Floor(Math.Sqrt(numberToCheck));
 
                 // You can do less work by observing that at this point, all primes 
                 // other than 2 and 3 leave a remainder of either 1 or 5 when divided by 6. 
@@ -84,7 +82,7 @@ namespace CainsSharpTools
                 switch (shape)
                 {
                     case AreaShape.Oval:
-                        return (float)PI * ((x/2) * (y / 2));
+                        return (float)Math.PI * ((x/2) * (y / 2));
                     case AreaShape.Rectangle:
                         return x * y;
                     case AreaShape.Triangle:
@@ -105,7 +103,7 @@ namespace CainsSharpTools
                     case VolumeShape.Cuboid:
                         return x * x * x;
                     case VolumeShape.Ovoid:
-                        return ((float)PI / 6) * (x * x * x);
+                        return ((float)Math.PI / 6) * (x * x * x);
                     default:
                         return 0;
                 }
@@ -124,7 +122,7 @@ namespace CainsSharpTools
                     case VolumeShape.Cuboid:
                         return x * y * z;
                     case VolumeShape.Ovoid:
-                        return ((float)PI / 6) * (x * y * z);
+                        return ((float)Math.PI / 6) * (x * y * z);
                     default:
                         return 0;
                 }
