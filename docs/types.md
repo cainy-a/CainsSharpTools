@@ -13,6 +13,7 @@ Members:
 Represents a 3D Vector
 
 Members:
+
 - `float _eulerX;`
 - `float _eulerY;`
 - `float _eulerZ;`
