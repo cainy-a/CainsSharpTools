@@ -129,6 +129,23 @@ namespace CainsSharpTools
                         return 0;
                 }
             }
+            /// <summary>
+            /// Calculates Compound Interest
+            /// </summary>
+            /// <param name="startNumber">The number you have before the compound interest</param>
+            /// <param name="numberOfYears">How many years the interest is applied over</param>
+            /// <param name="annualRateMultiplier">The multiplier for each compound Note: if less than 1, amount will DECREASE.</param>
+            /// <param name="timesCompoundedPerYear">How many times the interest compounds each year</param>
+            /// <returns>The value after compound interest</returns>
+            public static float CompoundInterest(float startNumber, int numberOfYears, float annualRateMultiplier, int timesCompoundedPerYear = 1)
+            {
+                var afterAmount = startNumber;
+                for (var i = 0; i < numberOfYears; i++)
+                {
+                    startNumber += (annualRateMultiplier / timesCompoundedPerYear);
+                }
+                return afterAmount;
+            }
         }
     }
 }

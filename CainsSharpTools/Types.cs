@@ -1,4 +1,6 @@
-﻿namespace CainsSharpTools
+﻿using System;
+
+namespace CainsSharpTools
 {
     public static class Types
     {

@@ -2,31 +2,25 @@
 
 ## class MathTools
 ### IsPrime()
-Checks if an integer is prime or not
-
+Checks if an integer, or list of integers are prime or not
+#### Overload 1
 Parameters:
 
 - `int numberToCheck`
 
 Returns: `bool`
-### IsPrime() 
-Checks if each integer in an array is prime or not
-
+#### Overload 2
 Parameters:
 
 - `int[] numbersToCheck`
 
 Returns: `bool[]`
-Take the index of an input number, then whether or not it is prime is at the same index in the returned array.
-### IsPrime()
-Checks if each integer in a list is prime or not
-
+#### Overload 3
 Parameters:
 
 - `List<int> numbersToCheck`
 
 Returns: `List<bool>`
-Take the index of an input number, then whether or not it is prime is at the same index in the returned list.
 ### CalculateArea()
 Calculates the area of a 2D shape
 
@@ -57,3 +51,14 @@ Parameters:
 - `float z`: how deep the shape is
 
 Returns: `float` The volume of the given shape
+### CompoundInterest()
+Calculates Compound Interest
+
+Parameters:
+
+- `float startNumber`: The amount of money you have before the compound interest.
+- `int numberOfYears`: How many years the compound interest runs for.
+- `float annualRateMultiplier`: The multiplier for each Compound. If less than zero, then amound of money will *decrease*.
+- `int timesCompoundedPerYear = 1`: OPTIONAL! How many times per year the money compounds.
+
+Returns: `float` The amount of money you have afterwards.
