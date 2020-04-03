@@ -62,3 +62,20 @@ Parameters:
 - `int timesCompoundedPerYear = 1`: OPTIONAL! How many times per year the money compounds.
 
 Returns: `float` The amount of money you have afterwards.
+## class Converters
+### FahrenheitToCelsius()
+Converts Fahrenheits to Celsius.
+
+Parameters:
+
+- `float fahrenheit`: The temperature in fahrenheits to convert to celsius
+
+Returns: `float` The given temperature in Celsius
+### CelsiusToFahrenheit()
+Converts Celsius to Fahrenheits.
+
+Parameters:
+
+- `float celsius`: The temperature in celsius to convert to fahrenheits
+
+Returns: `float` The given temperature in Fahrenheits
