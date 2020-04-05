@@ -62,7 +62,7 @@ Parameters:
 - `int timesCompoundedPerYear = 1`: OPTIONAL! How many times per year the money compounds.
 
 Returns: `float` The amount of money you have afterwards.
-## class Converters
+## class MathTools.Convert
 ### FahrenheitToCelsius()
 Converts Fahrenheits to Celsius.
 

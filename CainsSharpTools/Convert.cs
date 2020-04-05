@@ -2,7 +2,7 @@
 {
     public static partial class MathTools
     {
-        public static class Converters
+        public static class Convert
         {
             /// <summary>
             /// Converts from fahrenheit to celsius
