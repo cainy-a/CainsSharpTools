@@ -151,5 +151,39 @@ namespace CainsSharpTools
 
             return afterAmount;
         }
+
+        public static class Averages
+        {
+            // These are means
+            /// <summary>
+            /// Gets the Mean of an array of floats
+            /// </summary>
+            /// <returns>The mean</returns>
+            /// <param name="inputNumbers">Input floats.</param>
+            public static float Mean(float[] inputNumbers) => Mean(inputNumbers.ToList());
+            /// <summary>
+            /// Gets the Mean of a List of floats
+            /// </summary>
+            /// <returns>The mean</returns>
+            /// <param name="inputNumbers">Input floats.</param>
+            public static float Mean(List<float> inputNumbers)
+            {
+                float acc = 0;
+                float itemCount = 0;
+                foreach (var number in inputNumbers)
+                {
+                    acc += number;
+                    itemCount++;
+                }
+                return acc / itemCount;
+            }
+            /// <summary>
+            /// Gets the mean of x and y
+            /// </summary>
+            /// <returns>The mean</returns>
+            /// <param name="x">The first number</param>
+            /// <param name="y">The second number</param>
+            public static float Mean(float x, float y) => (x + y) / 2;
+        }
     }
 }

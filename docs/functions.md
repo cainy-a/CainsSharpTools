@@ -79,3 +79,31 @@ Parameters:
 - `float celsius`: The temperature in celsius to convert to fahrenheits
 
 Returns: `float` The given temperature in Fahrenheits
+## class MathTools.Averages
+### Mean()
+Gets the mean of 2 numbers, or an array // list of numbers.
+#### Overload 1
+Parameters:
+
+- `float[] inputNumbers`: The array of input numbers to average.
+
+Returns:
+
+- `float`: the mean of the array
+#### Overload 2
+Parameters:
+
+- `List<float> inputNumbers`: The list of input numbers to average.
+
+Returns:
+
+- `float`: the mean of the array
+#### Overload 3
+Parameters:
+
+- `float x`: The first number to average
+- `float y`: The second number to average
+
+Returns:
+
+- `float`: the mean of `x` and `y`
