@@ -56,12 +56,12 @@ Calculates Compound Interest
 
 Parameters:
 
-- `float startNumber`: The amount of money you have before the compound interest.
+- `decimal startNumber`: The amount of money you have before the compound interest.
 - `int numberOfYears`: How many years the compound interest runs for.
 - `float annualRateMultiplier`: The multiplier for each Compound. If less than zero, then amound of money will *decrease*.
 - `int timesCompoundedPerYear = 1`: OPTIONAL! How many times per year the money compounds.
 
-Returns: `float` The amount of money you have afterwards.
+Returns: `decimal` The amount of money you have afterwards.
 ## class MathTools.Convert
 ### FahrenheitToCelsius()
 Converts Fahrenheits to Celsius.
