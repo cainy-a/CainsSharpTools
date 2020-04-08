@@ -1,16 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CainsSharpTools", "CainsSharpTools\CainsSharpTools.csproj", "{B75C2105-7914-40F2-964C-BD217827EAF8}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "DocsProj", "DocsProj\DocsProj.mdproj", "{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Default|Any CPU = Default|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B75C2105-7914-40F2-964C-BD217827EAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B75C2105-7914-40F2-964C-BD217827EAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B75C2105-7914-40F2-964C-BD217827EAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B75C2105-7914-40F2-964C-BD217827EAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B75C2105-7914-40F2-964C-BD217827EAF8}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{B75C2105-7914-40F2-964C-BD217827EAF8}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}.Debug|Any CPU.ActiveCfg = Default|Any CPU
+		{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}.Debug|Any CPU.Build.0 = Default|Any CPU
+		{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}.Release|Any CPU.ActiveCfg = Default|Any CPU
+		{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}.Release|Any CPU.Build.0 = Default|Any CPU
+		{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}.Default|Any CPU.ActiveCfg = Default|Any CPU
+		{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}.Default|Any CPU.Build.0 = Default|Any CPU
 	EndGlobalSection
 EndGlobal

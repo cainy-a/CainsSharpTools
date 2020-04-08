@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{B65F7888-6DDB-4449-9416-D46BF9D8AB6A}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\docs\functions.md">
+      <Link>docs\functions.md</Link>
+    </None>
+    <None Include="..\docs\index.md">
+      <Link>docs\index.md</Link>
+    </None>
+    <None Include="..\docs\types.md">
+      <Link>docs\types.md</Link>
+    </None>
+  </ItemGroup>
+</Project>
