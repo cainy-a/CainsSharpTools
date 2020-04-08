@@ -79,6 +79,22 @@ Parameters:
 - `float celsius`: The temperature in celsius to convert to fahrenheits
 
 Returns: `float` The given temperature in Fahrenheits
+### MiToKm()
+Converts from Miles to Kilometers, or Miles Per Hour to Kilometers per hour.
+
+Parameters:
+
+- `double Miles`: the amount of Miles to convert.
+
+Returns: `double`: The corresponding amount of Kilometers.
+### KmToMi()
+Converts from Miles to Kilometers, or Miles Per Hour to Kilometers per hour.
+
+Parameters:
+
+- `double Kilometers`: the amount of Kilometers to convert.
+
+Returns: `double`: The corresponding amount of Miles.
 ## class MathTools.Averages
 ### Mean()
 Gets the mean of 2 numbers, or an array // list of numbers.
