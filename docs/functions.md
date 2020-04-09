@@ -1,6 +1,7 @@
 ﻿# Function Index
 
 ## class MathTools
+
 ### IsPrime()
 Checks if an integer, or list of integers are prime or not
 #### Overload 1
@@ -62,7 +63,9 @@ Parameters:
 - `int timesCompoundedPerYear = 1`: OPTIONAL! How many times per year the money compounds.
 
 Returns: `decimal` The amount of money you have afterwards.
+
 ## class MathTools.Convert
+
 ### FahrenheitToCelsius()
 Converts Fahrenheits to Celsius.
 
@@ -95,7 +98,9 @@ Parameters:
 - `double Kilometers`: the amount of Kilometers to convert.
 
 Returns: `double`: The corresponding amount of Miles.
+
 ## class MathTools.Averages
+
 ### Mean()
 Gets the mean of 2 numbers, or an array // list of numbers.
 #### Overload 1
@@ -123,3 +128,34 @@ Parameters:
 Returns:
 
 - `float`: the mean of `x` and `y`
+
+## class SciTools
+## class SciTools.Electricity
+
+### GetResistance()
+Gets Resistance from Current and Voltage
+
+Parameters:
+
+- `float v`: Voltage
+- `float i`: Current
+
+Returns: `float`: Resistance
+### GetCurrent()
+Gets Current from Resistance and Voltage
+
+Parameters:
+
+- `float v`: Voltage
+- `float r`: Resistance
+
+Returns: `float`: Current
+### GetVoltage()
+Gets Voltage from Current and Resistance
+
+Parameters:
+
+- `float r`: Resistance
+- `float i`: Current
+
+Returns: `float`: Voltage
