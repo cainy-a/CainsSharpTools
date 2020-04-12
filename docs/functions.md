@@ -1,5 +1,40 @@
 ﻿# Function Index
 
+## class Misc
+
+### Range()
+Works like in python: Returns an array for a range of numbers
+#### Overload 1
+Parameters:
+
+- `int low`: The number to start from; inclusive
+- `int high`: The number to end on; exclusive
+
+Returns: `int[]`: an array with the numbers in
+#### Overload 2
+Parameters:
+
+- `int high`: The number to end on, counting up from 0; exclusive
+
+Returns: `int[]`: an array with the numbers in
+
+### RangeList()
+Works like in python: Returns a List for a range of numbers
+#### Overload 1
+Parameters:
+
+- `int low`: The number to start from; inclusive
+- `int high`: The number to end on; exclusive
+
+Returns: `List<int>`: a List with the numbers in
+#### Overload 2
+Parameters:
+
+- `int high`: The number to end on, counting up from 0; exclusive
+
+Returns: `List<int>`: a List with the numbers in
+
+
 ## class MathTools
 
 ### IsPrime()
