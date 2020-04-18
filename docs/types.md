@@ -1,20 +1,16 @@
 ﻿# Type Index
 
-### Vector2
-Represents a 2D vector
+### There are no types as of now
+
+### ExampleType
+An example Type to show you how they will be documented
 
 Members:
 
-- `float _eulerX;`
-- `float _eulerY;`
-- `float _magnitude`
+- `string yourName;`
+- `float yourAge;`
+- `DateTime yourBirthday`
 
-### Vector3
-Represents a 3D Vector
+Methods:
 
-Members:
-
-- `float _eulerX;`
-- `float _eulerY;`
-- `float _eulerZ;`
-- `float _magnitude;`
+- `string ToString()`: Click [here](https://cainssharptools.readthedocs.io/en/latest/functions) to view in the function index
