@@ -34,6 +34,34 @@ Parameters:
 
 Returns: `List<int>`: a List with the numbers in
 
+## class Misc.MorseCode
+### PlainText()
+Gets Plaintext from Morse Code.
+
+Parameters:
+
+- `MorseCode morseCode`: The MorseCode object to Decode
+
+Returns: `string`
+
+## Parse()
+Converts plaintext into Morse Code.
+
+Parameters:
+
+- `string plaintext`: The text to encode
+
+Returns: `MorseCode`: The encoded MorseCode
+
+## TryParse()
+Attempts to convert plaintext into Morse Code, but will not throw an exception
+
+Parameters:
+
+- `string plaintext`: The text to encode
+- `out MorseCode result`: The encoded MorseCode
+
+Returns: `bool`: Whether or not the operation was successful.
 
 ## class MathTools
 
