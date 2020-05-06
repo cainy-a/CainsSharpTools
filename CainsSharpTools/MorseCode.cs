@@ -73,8 +73,14 @@ namespace CainsSharpTools
 
 			foreach (var letter in plaintext)
 			{
-				if (!AllowedMorseChars.Contains(char.Parse(letter.ToString().ToLower())))
+				if (!AllowedMorseChars.Contains(char.Parse(letter.ToString().ToLower())) && letter != ' ')
 					throw new ArgumentOutOfRangeException(); // Rogue characters!
+			}
+			
+			foreach (var letter in plaintext)
+			{
+				if (letter == ' ') continue;
+				
 				switch (letter.ToString().ToLower())
 				{
 					case "a":
@@ -234,7 +240,7 @@ namespace CainsSharpTools
 				sb.Append(" ");
 			}
 
-			return new MorseCode(sb.ToString());
+			return new MorseCode(sb.ToString().Trim(), false);
 		}
 		/// <summary>
 		/// Attempts to create a MorseCode object out of a string.
