@@ -1,4 +1,6 @@
 using NUnit.Framework;
+using CainsSharpTools;
+using static CainsSharpTools.Misc;
 
 namespace NUnitProj
 {
@@ -10,9 +12,9 @@ namespace NUnitProj
 		}
 
 		[Test]
-		public void Test1()
-		{
-			Assert.Pass();
-		}
+		public void HelloTest()
+			=> Assert.AreEqual(
+				".... . .-.. .-.. ---",
+				MorseCode.Parse("Hello").Value);
 	}
 }
