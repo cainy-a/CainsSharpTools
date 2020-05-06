@@ -32,6 +32,11 @@ namespace CainsSharpTools
 			's', 't', 'u',
 			'v', 'w', 'x',
 			'y', 'z',
+			
+			'1', '2', '3',
+			'4', '5', '6',
+			'7', '8', '9',
+			'0',
 
 			'.', ',', '?',
 			'\'', '!', '/',
@@ -150,6 +155,38 @@ namespace CainsSharpTools
 					case "z":
 						sb.Append("--..");
 						break;
+					
+					case "1":
+						sb.Append(".----");
+						break;
+					case "2":
+						sb.Append("..---");
+						break;
+					case "3":
+						sb.Append("...--");
+						break;
+					case "4":
+						sb.Append("....-");
+						break;
+					case "5":
+						sb.Append(".....");
+						break;
+					case "6":
+						sb.Append("-....");
+						break;
+					case "7":
+						sb.Append("--...");
+						break;
+					case "8":
+						sb.Append("---..");
+						break;
+					case "9":
+						sb.Append("----.");
+						break;
+					case "0":
+						sb.Append("-----");
+						break;
+
 					case ".":
 						sb.Append(".-.-.-");
 						break;
@@ -327,6 +364,38 @@ namespace CainsSharpTools
 					case "--..":
 						sb.Append("z");
 						break;
+					
+					case ".----":
+						sb.Append("1");
+						break;
+					case "..---":
+						sb.Append("2");
+						break;
+					case "...--":
+						sb.Append("3");
+						break;
+					case "....-":
+						sb.Append("4");
+						break;
+					case ".....":
+						sb.Append("5");
+						break;
+					case "-....":
+						sb.Append("6");
+						break;
+					case "--...":
+						sb.Append("7");
+						break;
+					case "---..":
+						sb.Append("8");
+						break;
+					case "----.":
+						sb.Append("9");
+						break;
+					case "-----":
+						sb.Append("0");
+						break;
+					
 					case ".-.-.-":
 						sb.Append(".");
 						break;
