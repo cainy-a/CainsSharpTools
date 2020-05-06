@@ -12,9 +12,15 @@ namespace NUnitProj
 		}
 
 		[Test]
-		public void HelloTest()
-			=> Assert.AreEqual(
+		public void HelloEncodeTest() =>
+			Assert.AreEqual(
 				".... . .-.. .-.. ---",
 				MorseCode.Parse("Hello").Value);
+		
+		[Test]
+		public void HelloDecodeTest() =>
+			Assert.AreEqual(
+				"hello",
+				new MorseCode(".... . .-.. .-.. ---", false).PlainText());
 	}
 }
