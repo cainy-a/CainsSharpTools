@@ -275,19 +275,7 @@ namespace CainsSharpTools
 		public static string PlainText(MorseCode morseCode)
 		{
 			StringBuilder sb = new StringBuilder();
-			var substrings = new List<string>();
-			
-			for (int i = 0; i < morseCode.Value.Length; i++)
-			{
-				StringBuilder workingSb = new StringBuilder();
-				while (morseCode.Value[i] == ' ')
-				{
-					workingSb.Append(morseCode.Value[i]);
-					i++;
-				}
-				substrings.Add(workingSb.ToString());
-			} // Separate into bits of strings
-			
+			var substrings = morseCode.Value.Split(" ");
 			foreach (var encodedChar in substrings)
 			{
 				switch (encodedChar.ToString().Trim())
@@ -447,7 +435,7 @@ namespace CainsSharpTools
 				}
 			}
 
-			return sb.ToString();
+			return sb.ToString().Trim();
 		}
 	}
 }
