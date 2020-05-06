@@ -44,7 +44,7 @@ Parameters:
 
 Returns: `string`
 
-## Parse()
+### Parse()
 Converts plaintext into Morse Code.
 
 Parameters:
@@ -53,7 +53,7 @@ Parameters:
 
 Returns: `MorseCode`: The encoded MorseCode
 
-## TryParse()
+### TryParse()
 Attempts to convert plaintext into Morse Code, but will not throw an exception
 
 Parameters:
