@@ -4,6 +4,7 @@ A library of useful .NET tools, written in C#. Works on .NET Core and Framework/
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/0n0qj9ukxiyxwk65?svg=true)](https://ci.appveyor.com/project/cainy-a/cainssharptools)
 
 Includes lots of cool stuff, including:
+- MORSE CODE (that one took me ages)
 - Checking for Primes
 - Checking for *lots of* Primes, from a List or Array
 - Calculating Area and Volume
