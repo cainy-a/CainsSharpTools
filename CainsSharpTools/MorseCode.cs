@@ -275,7 +275,7 @@ namespace CainsSharpTools
 		public static string PlainText(MorseCode morseCode)
 		{
 			StringBuilder sb = new StringBuilder();
-			var substrings = morseCode.Value.Split(" ");
+			var substrings = morseCode.Value.Split(' ');
 			foreach (var encodedChar in substrings)
 			{
 				switch (encodedChar.ToString().Trim())
