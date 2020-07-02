@@ -5,7 +5,6 @@ namespace CainsSharpTools
     {
         public static class Physics 
         {
-
         }
         public static class Electricity
         {
